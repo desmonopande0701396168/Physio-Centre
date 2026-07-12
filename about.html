@@ -1,1 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>About - Physio-Center</title>
+<style>
+  body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+  }
 
+  /* Header styles */
+  header {
+    background-color:#006666; 
+    padding:15px; 
+    color:#fff;
+    text-align: center;
+  }
+  /* Logo styles */
+  .site-logo {
+    width: 100px; /* Adjust size as needed */
+    height: auto;
+    display: block;
+    margin: 10px auto; /* Center horizontally with some margin */
+    border-radius: 4px; /* Optional: rounded corners */
+    border: 2px solid #ccc; /* Optional: border for visibility */
+  }
+  header h1 {
+    margin:0; 
+    margin-top:10px;
+  }
+
+  /* Navbar styles */
+  .navbar {
+    background-color: grey;
+    padding: 15px 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  }
+  .nav-links {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+  }
+  .nav-links li {
+    margin: 0 20px;
+  }
+  .nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    font-family: 'Arial', sans-serif;
+    padding: 8px 12px;
+    border-radius: 4px;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  .nav-links a:hover {
+    background-color: #575757;
+    color: #ffffff;
+  }
+
+  main {
+    padding: 20px;
+  }
+
+  h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #006666;
+  }
+
+  /* Container for the cards grid */
+.cards-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+/* Card styles */
+.card {
+  background: #fff;
+  width: 250px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  overflow: hidden;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.2s;
+}
+
+.card:hover {
+  transform: scale(1.02);
+}
+
+/* Updated image styles inside the card to reduce size and make uniform */
+.card-img {
+  width: 100%;
+  height: 150px; /* fixed height for uniformity */
+  object-fit: cover; /* crop to fill the box without distortion */
+  border-radius: 4px; /* optional rounded corners */
+  margin-top: 10px; /* spacing from top */
+}
+
+/* Card content styles */
+.card-content {
+  padding: 10px;
+  text-align: center;
+}
+
+.card-content h3 {
+  margin: 10px 0 5px 0;
+  font-size: 1.1em;
+  color: #004d4d;
+}
+
+.brief {
+  font-size: 0.9em;
+  color: #555;
+}
+
+/* Expanded details section */
+.details {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease, padding 0.3s;
+  padding: 0 10px;
+  background-color: #f9f9f9;
+}
+
+/* Show details on hover of the card */
+.card:hover .details {
+  max-height: 1000px;
+  padding: 10px;
+}
+
+.details p {
+  margin: 0 0 10px 0;
+  font-size: 0.95em;
+  line-height: 1.6;
+  color: #333;
+}
+
+/* Images section styles outside the card (if used elsewhere) */
+.image-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.image-container img {
+  width: 48%;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+@media(max-width: 600px) {
+  .image-container img {
+    width: 100%;
+  }
+  .card {
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+
+<header>
+  <img src="logo.jpg" alt="Physio-Center Logo" class="site-logo" />
+  <h1>PhysioCenter</h1>
+</header>
+
+<div class="navbar">
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About Us</a></li>
+    <li><a href="services main page.html">Services main page</a></li>
+    <li><a href="contact.html">Contact Us</a></li>
+  </ul>
+</div>
+
+<main>
+  <h2>About Us</h2>
+
+  <div class="about-image" style="text-align:center;">
+    <img src="jpg.16.jpg" alt="Physiotherapy Session" style="width:100%; max-width:600px; border-radius:8px;">
+    <img src="jpg.1.jpg" alt="Physiotherapy Session" style="width:100%; max-width:600px; border-radius:8px;">
+  </div>
+
+  <div style="max-width:900px; margin:auto; background:none; padding:20px; border-radius:8px; box-shadow:20px 8px rgba(0,0,0,0.1); margin-bottom:30px;">
+    <p style="text-align:card;">''Success is no accident. It is hard work, perseverance,
+     learning, studying, sacrifice, and most of all,
+      love for what you are doing'' — Pelé.</p>
+  </div>
+
+  <!-- Cards arranged as grid with detailed info -->
+  <div class="cards-grid">
+
+    <!-- Our Purpose and Goals -->
+    <div class="card">
+      <div class="card-content">
+        <img src="opande1.jpg" alt="" class="card-img"/>
+        <h3> Purpose and Goals</h3>
+        <img src="go1.png" alt="Icon" width="50" height="50" />
+      </div>
+      <div class="details">
+        <p>We created this platform to serve as a trusted resource for those recovering from injuries. Whether you're an athlete, an older adult, or anyone facing the challenges of healing, we're here to guide you every step of the way.</p>
+      </div>
+    </div>
+
+    <!-- Our Mission -->
+    <div class="card">
+      <img src="opande2.jpg" alt="" class="card-img"/>
+      <div class="card-content">
+        <h3> Mission</h3>
+        <img src="go1.png" alt="Icon" width="50" height="50" />
+      </div>
+      <div class="details">
+        <p>To empower individuals recovering from injuries by providing effective strategies, guidance, and support to facilitate their rehabilitation and recovery process.</p>
+      </div>
+    </div>
+
+    <!-- Our Vision -->
+    <div class="card">
+      <img src="opande3.jpg" alt="" class="card-img"/>
+      <div class="card-content">
+        <h3> Vision</h3>
+        <img src="go1.png" alt="Icon" width="50" height="50" />
+      </div>
+      <div class="details">
+        <p>To become a trusted resource that inspires and assists injured individuals worldwide in achieving successful healing and reclaiming their well-being.</p>
+      </div>
+    </div>
+
+    <!-- Our Approach -->
+    <div class="card">
+      <img src="opande4.jpg" alt="" class="card-img"/>
+      <div class="card-content">
+        <h3> Approach</h3>
+        <img src="go1.png" alt="Icon" width="50" height="50" />
+      </div>
+      <div class="details">
+        <p>We believe recovery is a personalized journey. Our philosophy centers on evidence-based practices, holistic care, and empowering you with the tools to take control of your healing process.</p>
+      </div>
+    </div>
+
+    <!-- What You Can Expect -->
+    <div class="card">
+      <img src="opande5.jpg" alt="" class="card-img"/>
+      <div class="card-content">
+        <h3>What You Can Expect</h3>
+        <img src="go1.png" alt="Icon" width="50" height="50" />
+      </div>
+      <div class="details">
+        <p>Explore expert advice, practical tips, recovery strategies, and motivational stories designed to help you stay motivated and on track towards full recovery.</p>
+      </div>
+    </div>
+
+    <!-- The Founder -->
+    <div class="card">
+      <img src="opande6.png" alt="" class="card-img"/>
+      <div class="card-content">
+        <h3>The Founder</h3>
+        <img src="go1.png" alt="Icon" width="50" height="50" />
+      </div>
+      <div class="details">
+        <p>Christopher Opande's journey began with a simple vision—to create impactful solutions that inspire change and empower communities. Growing up in a small town, Christopher faced numerous challenges that fueled his determination to make a difference. With a passion for innovation and a heart dedicated to service, he pursued his dreams relentlessly.</p>
+        <p>Over the years, Christopher has dedicated his life to building initiatives that foster growth, education, and sustainable development. His leadership style combines integrity, creativity, and a deep understanding of the needs of those he serves. Through perseverance and a commitment to excellence, Christopher has transformed ideas into realities, leaving a lasting legacy of positive change. Today, Christopher Opande stands as a beacon of hope and a testament to the power of resilience and vision. His story continues to inspire many to pursue their passions and strive for a better future.</p>
+      </div>
+    </div>
+
+  </div>
+
+ <!-- Images section -->
+<div class="image-container" style="width:100%; max-width:600px; border-radius:8px; text-align:center;">
+</div>
+<div class="image-container" style="text-align:center;">
+  <img src="jpg.3.jpg" alt="Location Image 1" style="width:100%; max-width:500px; height:auto; margin:30px; border-radius:20px;">
+  <img src="jpg.4.jpg" alt="Location Image 2" style="width:100%; max-width:500px; height:auto; margin:30px; border-radius:20px;">
+</div>
+<!-- Footer -->
+<footer>
+  <p>&copy; 2026 Physiotherapy & Sports Injury Center. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
