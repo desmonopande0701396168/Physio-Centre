@@ -50,6 +50,33 @@
     background-color: #f4f4f4;
   }
 
+  /* Header styling */
+  header.header-section {
+    background-color:#006666; 
+    padding:15px; 
+    color:#fff;
+  }
+
+  /* Container inside header for logo and title */
+  .header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .header-title {
+    font-size: 24px;
+    margin: 0;
+    flex: 1;
+    text-align: center;
+  }
+
+  /* Logo styling */
+  .site-logo {
+    width: 80px; /* Smaller size */
+    height: auto;
+  }
+
   h1 {
     text-align: center;
     margin-bottom: 30px;
@@ -95,28 +122,12 @@
     padding: 0 10px 10px 10px;
   }
 
-  /* Sections for each sport detail */
-  section {
-    margin-top: 50px;
-    padding: 20px;
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
-  }
-
-  section h2 {
-    margin-top: 0;
-  }
-
   /* Footer styling */
   footer {
     background-color: #222;
     color: Green;
     padding: 10px 0;
     margin-top: 40px;
-  }
-
-  footer p {
     text-align: center;
   }
 </style>
@@ -124,8 +135,13 @@
 <body>
 
 <!-- Header -->
-<header style="background-color:#006666; padding:15px; color:#fff;">
-  <h1 style="margin:0; text-align:center;">PhysioCenter</h1>
+<header class="header-section">
+  <div class="header-container">
+    <!-- Logo on the right -->
+    <img src="logo.jpg" alt="Physio-Center Logo" class="site-logo" />
+    <!-- Title centered -->
+    <h1 class="header-title">sport Injury Prevention & Recovery Services</h1>
+  </div>
 </header>
 
 <!-- Navigation Bar -->
@@ -138,7 +154,7 @@
   </ul>
 </div>
 
-<h1 style="text-align:center;">sport Injury Prevention & Recovery Services</h1>
+<h1 style="text-align:center;">Sport Injury Prevention & Recovery Services</h1>
 
 <!-- Cards with links to separate pages -->
 <div class="cards">
@@ -185,10 +201,9 @@
   </a>
 </div>
 
-</body>
-</html>
-
 <!-- Footer -->
 <footer>
   <p>&copy; 2026 Physiotherapy & Sports Injury Center. All rights reserved.</p>
 </footer>
+</body>
+</html>
